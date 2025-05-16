@@ -13,11 +13,11 @@ export class RegionService {
   }
 
   findAll() {
-    return this.regionSchema.find({})
+    return this.regionSchema.find({}).populate("district")
   }
 
   findOne(id: string) {
-    return this.regionSchema.findOne({_id:id})
+    return this.regionSchema.findOne({_id:id}) 
   }
 
   update(id: string, updateRegionDto: UpdateRegionDto) {

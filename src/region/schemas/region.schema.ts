@@ -1,11 +1,22 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
-import { HydratedDocument } from "mongoose";
+import mongoose, { HydratedDocument } from "mongoose";
+import { District } from "../../district/schemas/district.schema";
 
 export type RegionDocument =  HydratedDocument<Region>
 
 @Schema()
 export class Region {
-   @Prop()
-   name:string
+  @Prop()
+  name: string;
+
+  @Prop({
+    type: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "District",
+      },
+    ],
+  })
+  district: District[];
 }
 export const RegionSchema  = SchemaFactory.createForClass(Region)

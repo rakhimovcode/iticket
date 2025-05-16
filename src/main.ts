@@ -8,7 +8,7 @@ async function start() {
     const app = await NestFactory.create(AppModule, {
       logger: ["debug", "error"],
     });
-    app.useGlobalPipes(new ValidationPipe({ whitelist: true }));
+    app.useGlobalPipes(new ValidationPipe());
     app.use(cookieParser());
     app.setGlobalPrefix("api");
     await app.listen(PORT, () => {

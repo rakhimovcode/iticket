@@ -8,6 +8,7 @@ import { RegionModule } from './region/region.module';
 import { DistrictModule } from './district/district.module';
 import { CustomerAddressModule } from './customer-address/customer-address.module';
 import { CustomerCardModule } from './customer-card/customer-card.module';
+import { VenueModule } from './venue/venue.module';
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { CustomerCardModule } from './customer-card/customer-card.module';
     DistrictModule,
     CustomerAddressModule,
     CustomerCardModule,
+    VenueModule,
   ],
 })
 export class AppModule {}
