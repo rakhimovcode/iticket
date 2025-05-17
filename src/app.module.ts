@@ -9,6 +9,11 @@ import { DistrictModule } from './district/district.module';
 import { CustomerAddressModule } from './customer-address/customer-address.module';
 import { CustomerCardModule } from './customer-card/customer-card.module';
 import { VenueModule } from './venue/venue.module';
+import { TypesModule } from './types/types.module';
+import { VenueTypesModule } from './venue-types/venue-types.module';
+import { VenuePhotoModule } from './venue-photo/venue-photo.module';
+import { SeatTypeModule } from './seat-type/seat-type.module';
+import { SeatModule } from './seat/seat.module';
 
 @Module({
   imports: [
@@ -22,6 +27,11 @@ import { VenueModule } from './venue/venue.module';
     CustomerAddressModule,
     CustomerCardModule,
     VenueModule,
+    TypesModule,
+    VenueTypesModule,
+    VenuePhotoModule,
+    SeatTypeModule,
+    SeatModule,
   ],
 })
 export class AppModule {}

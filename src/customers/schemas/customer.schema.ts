@@ -25,9 +25,6 @@ export class Customer {
   @Prop()
   gender: string;
 
-  // @Prop()
-  // lang_id:string
-
   @Prop({default:false})
   is_active:boolean
 
