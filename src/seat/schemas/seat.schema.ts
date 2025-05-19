@@ -19,7 +19,7 @@ export class Seat {
   venueId: Types.ObjectId;
 
   @Prop({ type: mongoose.Schema.Types.ObjectId, ref: SeatType.name })
-  seatTypeId: Types.ObjectId;
+  seatTypeId: Types.ObjectId; 
 
   @Prop()
   location_in_schema:string

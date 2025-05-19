@@ -14,6 +14,12 @@ import { VenueTypesModule } from './venue-types/venue-types.module';
 import { VenuePhotoModule } from './venue-photo/venue-photo.module';
 import { SeatTypeModule } from './seat-type/seat-type.module';
 import { SeatModule } from './seat/seat.module';
+import { LangModule } from './lang/lang.module';
+import { HumanCategoryModule } from './human-category/human-category.module';
+import { EventTypeModule } from './event-type/event-type.module';
+import { TicketStatusModule } from './ticket-status/ticket-status.module';
+import { EventModule } from './event/event.module';
+import { TicketModule } from './ticket/ticket.module';
 
 @Module({
   imports: [
@@ -32,6 +38,12 @@ import { SeatModule } from './seat/seat.module';
     VenuePhotoModule,
     SeatTypeModule,
     SeatModule,
+    LangModule,
+    HumanCategoryModule,
+    EventTypeModule,
+    TicketStatusModule,
+    EventModule,
+    TicketModule,
   ],
 })
 export class AppModule {}
