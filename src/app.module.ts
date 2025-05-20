@@ -20,6 +20,12 @@ import { EventTypeModule } from './event-type/event-type.module';
 import { TicketStatusModule } from './ticket-status/ticket-status.module';
 import { EventModule } from './event/event.module';
 import { TicketModule } from './ticket/ticket.module';
+import { PaymentMethodModule } from './payment-method/payment-method.module';
+import { DeliveryMethodModule } from './delivery-method/delivery-method.module';
+import { CartModule } from './cart/cart.module';
+import { CartItemModule } from './cart-item/cart-item.module';
+import { BookingsModule } from './bookings/bookings.module';
+
 
 @Module({
   imports: [
@@ -44,6 +50,11 @@ import { TicketModule } from './ticket/ticket.module';
     TicketStatusModule,
     EventModule,
     TicketModule,
+    PaymentMethodModule,
+    DeliveryMethodModule,
+    CartModule,
+    CartItemModule,
+    BookingsModule,
   ],
 })
 export class AppModule {}

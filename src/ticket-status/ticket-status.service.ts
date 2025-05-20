@@ -13,7 +13,7 @@ export class TicketStatusService {
   }
 
   findAll() {
-    return this.ticketStatusSchema.find({})
+  return this.ticketStatusSchema.find({})
   }
 
   findOne(id: string) {
